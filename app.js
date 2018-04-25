@@ -68,8 +68,6 @@ document.body.onload = function() {
             if (progress < 1) {
                 document.getElementById("progress").innerHTML = progress;
                 for (var i = 0; i < 12; i++) {
-                    var s = "star" + i;
-                    console.log(s);
                     document.getElementById("star"+i).style.display = "none";
                 }
                 document.getElementById("star"+(Math.floor(progress*12))).style.display = "inline";
