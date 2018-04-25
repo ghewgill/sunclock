@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="manifest" href="mf.webmanifest">
+<style type="text/css">
+    body {
+        background-color: #404080;
+    }
+    .wake {
+        background-color: #ffff00;
+    }
+    #clock {
+        font-size: 60pt;
+        position: absolute;
+        bottom: 0;
+    }
+    #goodnight {
+        display: none;
+        width: 20%;
+        height: 50px;
+        bottom: 0;
+        margin: 0 0;
+        font-size: 20pt;
+    }
+    #image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 640px;
+        height: 630px;
+    }
+    .goodnight {
+        -webkit-animation-duration: 5s;
+        -webkit-animation-name: "goodnight";
+        -webkit-animation-iteration-count: 1;
+    }
+    @-webkit-keyframes goodnight {
+        from {
+            background-color: #ffff00;
+        }
+        50% {
+            background-color: #303030;
+        }
+        to {
+            background-color: #404080;
+        }
+    }
+    #progress {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div id="clock"></div>
+<div>
+<button id="goodnight">Goodnight</button>
+</div>
+<div id="progress"></div>
+<div id="image">
+    <img id="sun" src="sun.png" alt="Sun" style="display: none" />
+    <img id="star0" src="star0.png" alt="Star" style="display: none" />
+    <img id="star1" src="star1.png" alt="Star" style="display: none" />
+    <img id="star2" src="star2.png" alt="Star" style="display: none" />
+    <img id="star3" src="star3.png" alt="Star" style="display: none" />
+    <img id="star4" src="star4.png" alt="Star" style="display: none" />
+    <img id="star5" src="star5.png" alt="Star" style="display: none" />
+    <img id="star6" src="star6.png" alt="Star" style="display: none" />
+    <img id="star7" src="star7.png" alt="Star" style="display: none" />
+    <img id="star8" src="star8.png" alt="Star" style="display: none" />
+    <img id="star9" src="star9.png" alt="Star" style="display: none" />
+    <img id="star10" src="star10.png" alt="Star" style="display: none" />
+    <img id="star11" src="star11.png" alt="Star" style="display: none" />
+</div>
+<script src="app.js"></script>
+</body>
+</html>
