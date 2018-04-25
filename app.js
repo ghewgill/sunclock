@@ -3,7 +3,7 @@ var wakeup = null;
 
 document.body.onload = function() {
     if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/~greg/sunclock/sw.js", {scope: "/~greg/sunclock/"}).then(function(reg) {
+        navigator.serviceWorker.register("/sunclock/sw.js", {scope: "/sunclock/"}).then(function(reg) {
             if (reg.installing) {
                 console.log("Service worker installing");
             } else if (reg.waiting) {
